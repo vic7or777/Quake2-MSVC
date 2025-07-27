@@ -113,10 +113,10 @@
       <MapFileName>.\debug/ref_soft.map</MapFileName>
       <SubSystem>Windows</SubSystem>
       <RandomizedBaseAddress>false</RandomizedBaseAddress>
-      <DataExecutionPrevention>
-      </DataExecutionPrevention>
+      <DataExecutionPrevention>false</DataExecutionPrevention>
       <ImportLibrary>.\..\debug/ref_soft.lib</ImportLibrary>
       <TargetMachine>MachineX86</TargetMachine>
+      <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
     </Link>
     <Bscmake>
       <SuppressStartupBanner>true</SuppressStartupBanner>
@@ -159,10 +159,10 @@
       <ProgramDatabaseFile>.\..\release/ref_soft.pdb</ProgramDatabaseFile>
       <SubSystem>Windows</SubSystem>
       <RandomizedBaseAddress>false</RandomizedBaseAddress>
-      <DataExecutionPrevention>
-      </DataExecutionPrevention>
+      <DataExecutionPrevention>false</DataExecutionPrevention>
       <ImportLibrary>.\..\release/ref_soft.lib</ImportLibrary>
       <TargetMachine>MachineX86</TargetMachine>
+      <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
     </Link>
     <Bscmake>
       <SuppressStartupBanner>true</SuppressStartupBanner>
@@ -206,9 +206,9 @@
       <ProgramDatabaseFile>.\..\ReleaseAXP/ref_soft.pdb</ProgramDatabaseFile>
       <SubSystem>Windows</SubSystem>
       <RandomizedBaseAddress>false</RandomizedBaseAddress>
-      <DataExecutionPrevention>
-      </DataExecutionPrevention>
+      <DataExecutionPrevention>false</DataExecutionPrevention>
       <ImportLibrary>.\..\ReleaseAXP/ref_soft.lib</ImportLibrary>
+      <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
     </Link>
     <Bscmake>
       <SuppressStartupBanner>true</SuppressStartupBanner>
@@ -252,9 +252,9 @@
       <ProgramDatabaseFile>.\..\DebugAxp/ref_soft.pdb</ProgramDatabaseFile>
       <SubSystem>Windows</SubSystem>
       <RandomizedBaseAddress>false</RandomizedBaseAddress>
-      <DataExecutionPrevention>
-      </DataExecutionPrevention>
+      <DataExecutionPrevention>false</DataExecutionPrevention>
       <ImportLibrary>.\..\DebugAxp/ref_soft.lib</ImportLibrary>
+      <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
     </Link>
     <Bscmake>
       <SuppressStartupBanner>true</SuppressStartupBanner>
