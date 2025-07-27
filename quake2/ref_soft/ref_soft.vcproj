@@ -4,6 +4,7 @@
 	Version="9,00"
 	Name="ref_soft"
 	ProjectGUID="{502BFDD8-5647-4692-A23A-45A349013ED6}"
+	RootNamespace="ref_soft"
 	TargetFrameworkVersion="0"
 	>
 	<Platforms>
@@ -47,6 +48,7 @@
 			<Tool
 				Name="VCCLCompilerTool"
 				Optimization="0"
+				AdditionalIncludeDirectories="$(SolutionDir)..\reqs"
 				PreprocessorDefinitions="_DEBUG;WIN32;_WINDOWS"
 				MinimalRebuild="true"
 				RuntimeLibrary="1"
@@ -146,6 +148,7 @@
 				Name="VCCLCompilerTool"
 				Optimization="2"
 				InlineFunctionExpansion="1"
+				AdditionalIncludeDirectories="$(SolutionDir)..\reqs"
 				PreprocessorDefinitions="WIN32;NDEBUG;_WINDOWS"
 				StringPooling="true"
 				RuntimeLibrary="0"
@@ -241,6 +244,7 @@
 				AdditionalOptions="/QA21164 /QAieee1 "
 				Optimization="2"
 				InlineFunctionExpansion="1"
+				AdditionalIncludeDirectories="$(SolutionDir)..\reqs"
 				PreprocessorDefinitions="WIN32;NDEBUG;_WINDOWS;C_ONLY"
 				StringPooling="true"
 				RuntimeLibrary="0"
@@ -334,6 +338,7 @@
 				Name="VCCLCompilerTool"
 				AdditionalOptions="/QA21164 /MTd /QAieee1 "
 				Optimization="0"
+				AdditionalIncludeDirectories="$(SolutionDir)..\reqs"
 				PreprocessorDefinitions="_DEBUG;WIN32;_WINDOWS;C_ONLY"
 				RuntimeLibrary="1"
 				PrecompiledHeaderFile=".\DebugAxp/ref_soft.pch"
@@ -518,7 +523,7 @@
 					>
 					<Tool
 						Name="VCCustomBuildTool"
-						CommandLine="ml /c /Cp /coff /Fo$(OUTDIR)\$(InputName).obj /Zm /Zi $(InputPath)&#x0D;&#x0A;"
+						CommandLine="$(SolutionDir)..\reqs\ml /c /Cp /coff /Fo$(OUTDIR)\$(InputName).obj /Zm /Zi $(InputPath)&#x0D;&#x0A;"
 						Outputs="$(OUTDIR)\$(InputName).obj"
 					/>
 				</FileConfiguration>
@@ -527,7 +532,7 @@
 					>
 					<Tool
 						Name="VCCustomBuildTool"
-						CommandLine="ml /c /Cp /coff /Fo$(OUTDIR)\$(InputName).obj /Zm /Zi $(InputPath)&#x0D;&#x0A;"
+						CommandLine="$(SolutionDir)..\reqs\ml /c /Cp /coff /Fo$(OUTDIR)\$(InputName).obj /Zm /Zi $(InputPath)&#x0D;&#x0A;"
 						Outputs="$(OUTDIR)\$(InputName).obj"
 					/>
 				</FileConfiguration>
@@ -664,7 +669,7 @@
 					>
 					<Tool
 						Name="VCCustomBuildTool"
-						CommandLine="ml /c /Cp /coff /Fo$(OUTDIR)\$(InputName).obj /Zm /Zi $(InputPath)&#x0D;&#x0A;"
+						CommandLine="$(SolutionDir)..\reqs\ml /c /Cp /coff /Fo$(OUTDIR)\$(InputName).obj /Zm /Zi $(InputPath)&#x0D;&#x0A;"
 						Outputs="$(OUTDIR)\$(InputName).obj"
 					/>
 				</FileConfiguration>
@@ -673,7 +678,7 @@
 					>
 					<Tool
 						Name="VCCustomBuildTool"
-						CommandLine="ml /c /Cp /coff /Fo$(OUTDIR)\$(InputName).obj /Zm /Zi $(InputPath)&#x0D;&#x0A;"
+						CommandLine="$(SolutionDir)..\reqs\ml /c /Cp /coff /Fo$(OUTDIR)\$(InputName).obj /Zm /Zi $(InputPath)&#x0D;&#x0A;"
 						Outputs="$(OUTDIR)\$(InputName).obj"
 					/>
 				</FileConfiguration>
@@ -702,7 +707,7 @@
 					>
 					<Tool
 						Name="VCCustomBuildTool"
-						CommandLine="ml /c /Cp /coff /Fo$(OUTDIR)\$(InputName).obj /Zm /Zi $(InputPath)&#x0D;&#x0A;"
+						CommandLine="$(SolutionDir)..\reqs\ml /c /Cp /coff /Fo$(OUTDIR)\$(InputName).obj /Zm /Zi $(InputPath)&#x0D;&#x0A;"
 						Outputs="$(OUTDIR)\$(InputName).obj"
 					/>
 				</FileConfiguration>
@@ -711,7 +716,7 @@
 					>
 					<Tool
 						Name="VCCustomBuildTool"
-						CommandLine="ml /c /Cp /coff /Fo$(OUTDIR)\$(InputName).obj /Zm /Zi $(InputPath)&#x0D;&#x0A;"
+						CommandLine="$(SolutionDir)..\reqs\ml /c /Cp /coff /Fo$(OUTDIR)\$(InputName).obj /Zm /Zi $(InputPath)&#x0D;&#x0A;"
 						Outputs="$(OUTDIR)\$(InputName).obj"
 					/>
 				</FileConfiguration>
@@ -776,7 +781,7 @@
 					>
 					<Tool
 						Name="VCCustomBuildTool"
-						CommandLine="ml /c /Cp /coff /Fo$(OUTDIR)\$(InputName).obj /Zm /Zi $(InputPath)&#x0D;&#x0A;"
+						CommandLine="$(SolutionDir)..\reqs\ml /c /Cp /coff /Fo$(OUTDIR)\$(InputName).obj /Zm /Zi $(InputPath)&#x0D;&#x0A;"
 						Outputs="$(OUTDIR)\$(InputName).obj"
 					/>
 				</FileConfiguration>
@@ -785,7 +790,7 @@
 					>
 					<Tool
 						Name="VCCustomBuildTool"
-						CommandLine="ml /c /Cp /coff /Fo$(OUTDIR)\$(InputName).obj /Zm /Zi $(InputPath)&#x0D;&#x0A;"
+						CommandLine="$(SolutionDir)..\reqs\ml /c /Cp /coff /Fo$(OUTDIR)\$(InputName).obj /Zm /Zi $(InputPath)&#x0D;&#x0A;"
 						Outputs="$(OUTDIR)\$(InputName).obj"
 					/>
 				</FileConfiguration>
@@ -1066,7 +1071,7 @@
 					>
 					<Tool
 						Name="VCCustomBuildTool"
-						CommandLine="ml /c /Cp /coff /Fo$(OUTDIR)\$(InputName).obj /Zm /Zi $(InputPath)&#x0D;&#x0A;"
+						CommandLine="$(SolutionDir)..\reqs\ml /c /Cp /coff /Fo$(OUTDIR)\$(InputName).obj /Zm /Zi $(InputPath)&#x0D;&#x0A;"
 						Outputs="$(OUTDIR)\$(InputName).obj"
 					/>
 				</FileConfiguration>
@@ -1075,7 +1080,7 @@
 					>
 					<Tool
 						Name="VCCustomBuildTool"
-						CommandLine="ml /c /Cp /coff /Fo$(OUTDIR)\$(InputName).obj /Zm /Zi $(InputPath)&#x0D;&#x0A;"
+						CommandLine="$(SolutionDir)..\reqs\ml /c /Cp /coff /Fo$(OUTDIR)\$(InputName).obj /Zm /Zi $(InputPath)&#x0D;&#x0A;"
 						Outputs="$(OUTDIR)\$(InputName).obj"
 					/>
 				</FileConfiguration>
@@ -1196,7 +1201,7 @@
 					>
 					<Tool
 						Name="VCCustomBuildTool"
-						CommandLine="ml /c /Cp /coff /Fo$(OUTDIR)\$(InputName).obj /Zm /Zi $(InputPath)&#x0D;&#x0A;"
+						CommandLine="$(SolutionDir)..\reqs\ml /c /Cp /coff /Fo$(OUTDIR)\$(InputName).obj /Zm /Zi $(InputPath)&#x0D;&#x0A;"
 						Outputs="$(OUTDIR)\$(InputName).obj"
 					/>
 				</FileConfiguration>
@@ -1205,7 +1210,7 @@
 					>
 					<Tool
 						Name="VCCustomBuildTool"
-						CommandLine="ml /c /Cp /coff /Fo$(OUTDIR)\$(InputName).obj /Zm /Zi $(InputPath)&#x0D;&#x0A;"
+						CommandLine="$(SolutionDir)..\reqs\ml /c /Cp /coff /Fo$(OUTDIR)\$(InputName).obj /Zm /Zi $(InputPath)&#x0D;&#x0A;"
 						Outputs="$(OUTDIR)\$(InputName).obj"
 					/>
 				</FileConfiguration>
@@ -1234,7 +1239,7 @@
 					>
 					<Tool
 						Name="VCCustomBuildTool"
-						CommandLine="ml /c /Cp /coff /Fo$(OUTDIR)\$(InputName).obj /Zm /Zi $(InputPath)&#x0D;&#x0A;"
+						CommandLine="$(SolutionDir)..\reqs\ml /c /Cp /coff /Fo$(OUTDIR)\$(InputName).obj /Zm /Zi $(InputPath)&#x0D;&#x0A;"
 						Outputs="$(OUTDIR)\$(InputName).obj"
 					/>
 				</FileConfiguration>
@@ -1243,7 +1248,7 @@
 					>
 					<Tool
 						Name="VCCustomBuildTool"
-						CommandLine="ml /c /Cp /coff /Fo$(OUTDIR)\$(InputName).obj /Zm /Zi $(InputPath)&#x0D;&#x0A;"
+						CommandLine="$(SolutionDir)..\reqs\ml /c /Cp /coff /Fo$(OUTDIR)\$(InputName).obj /Zm /Zi $(InputPath)&#x0D;&#x0A;"
 						Outputs="$(OUTDIR)\$(InputName).obj"
 					/>
 				</FileConfiguration>
@@ -1344,7 +1349,7 @@
 					>
 					<Tool
 						Name="VCCustomBuildTool"
-						CommandLine="ml /c /Cp /coff /Fo$(OUTDIR)\$(InputName).obj /Zm /Zi $(InputPath)&#x0D;&#x0A;"
+						CommandLine="$(SolutionDir)..\reqs\ml /c /Cp /coff /Fo$(OUTDIR)\$(InputName).obj /Zm /Zi $(InputPath)&#x0D;&#x0A;"
 						Outputs="$(OUTDIR)\$(InputName).obj"
 					/>
 				</FileConfiguration>
@@ -1353,7 +1358,7 @@
 					>
 					<Tool
 						Name="VCCustomBuildTool"
-						CommandLine="ml /c /Cp /coff /Fo$(OUTDIR)\$(InputName).obj /Zm /Zi $(InputPath)&#x0D;&#x0A;"
+						CommandLine="$(SolutionDir)..\reqs\ml /c /Cp /coff /Fo$(OUTDIR)\$(InputName).obj /Zm /Zi $(InputPath)&#x0D;&#x0A;"
 						Outputs="$(OUTDIR)\$(InputName).obj"
 					/>
 				</FileConfiguration>
@@ -1382,7 +1387,7 @@
 					>
 					<Tool
 						Name="VCCustomBuildTool"
-						CommandLine="ml /c /Cp /coff /Fo$(OUTDIR)\$(InputName).obj /Zm /Zi $(InputPath)&#x0D;&#x0A;"
+						CommandLine="$(SolutionDir)..\reqs\ml /c /Cp /coff /Fo$(OUTDIR)\$(InputName).obj /Zm /Zi $(InputPath)&#x0D;&#x0A;"
 						Outputs="$(OUTDIR)\$(InputName).obj"
 					/>
 				</FileConfiguration>
@@ -1391,7 +1396,7 @@
 					>
 					<Tool
 						Name="VCCustomBuildTool"
-						CommandLine="ml /c /Cp /coff /Fo$(OUTDIR)\$(InputName).obj /Zm /Zi $(InputPath)&#x0D;&#x0A;"
+						CommandLine="$(SolutionDir)..\reqs\ml /c /Cp /coff /Fo$(OUTDIR)\$(InputName).obj /Zm /Zi $(InputPath)&#x0D;&#x0A;"
 						Outputs="$(OUTDIR)\$(InputName).obj"
 					/>
 				</FileConfiguration>

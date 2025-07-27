@@ -4,6 +4,7 @@
 	Version="9,00"
 	Name="ref_gl"
 	ProjectGUID="{D2D8F9AB-654C-4534-957E-2BD8A0A7206A}"
+	RootNamespace="ref_gl"
 	TargetFrameworkVersion="0"
 	>
 	<Platforms>
@@ -47,6 +48,7 @@
 			<Tool
 				Name="VCCLCompilerTool"
 				Optimization="0"
+				AdditionalIncludeDirectories="$(SolutionDir)..\reqs"
 				PreprocessorDefinitions="_DEBUG;WIN32;_WINDOWS"
 				MinimalRebuild="true"
 				RuntimeLibrary="1"
@@ -145,6 +147,7 @@
 				Name="VCCLCompilerTool"
 				AdditionalOptions="/QA21164 /MTd /QAieee1 "
 				Optimization="0"
+				AdditionalIncludeDirectories="$(SolutionDir)..\reqs"
 				PreprocessorDefinitions="_DEBUG;WIN32;_WINDOWS;C_ONLY"
 				RuntimeLibrary="1"
 				PrecompiledHeaderFile=".\DebugAxp/ref_gl.pch"
@@ -239,6 +242,7 @@
 				AdditionalOptions="/QA21164 /QAieee1 "
 				Optimization="2"
 				InlineFunctionExpansion="1"
+				AdditionalIncludeDirectories="$(SolutionDir)..\reqs"
 				PreprocessorDefinitions="WIN32;NDEBUG;_WINDOWS;C_ONLY"
 				StringPooling="true"
 				RuntimeLibrary="0"
@@ -332,6 +336,7 @@
 				Name="VCCLCompilerTool"
 				Optimization="2"
 				InlineFunctionExpansion="1"
+				AdditionalIncludeDirectories="$(SolutionDir)..\reqs"
 				PreprocessorDefinitions="NDEBUG;WIN32;_WINDOWS"
 				StringPooling="true"
 				RuntimeLibrary="0"
